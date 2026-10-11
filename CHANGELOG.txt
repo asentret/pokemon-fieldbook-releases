@@ -1,0 +1,303 @@
+POKÉMON FIELDBOOK — CHANGELOG
+
+1.7.0 - 2026-10-11 (Windows only)
+- Added Windows 10 64-bit support alongside Windows 11. Installer minimum
+  is now Windows 10 build 10240 instead of Windows 11 build 22000.
+- Windows 10 uses its standard native title bar; the lavender/purple app
+  theme, menus, light/dark modes and collection features remain available.
+- Windows 11 retains its custom themed title bar.
+- Started the 1.7 series. Future versions roll from X.Y.9 to X.(Y+1).0
+  instead of X.Y.10. Existing historical version numbers are retained.
+- Android remains 1.6.13; collection backup format 1 is unchanged.
+- Preserved the previous source, executable and runtime under
+  backups/desktop-1.6.12-before-1.7.0 before editing.
+- Windows 11 launch/installer tests and simulated Windows 10 fallback
+  checks are run for this release; a real Windows 10 test is still pending.
+
+1.6.13 - 2026-10-11 (Android only)
+- Prepared a Play Store Android App Bundle signed with a separate upload key.
+- Retained the original app-signing key for directly installed APK updates.
+- Added repeatable bundle building, public signing certificates and Play
+  enrollment instructions for preserving the existing signing identity.
+- Builds now fail if the original app key is missing instead of generating
+  a replacement that would break updates for existing users.
+- Android versionCode is 10613; Windows remains 1.6.12. Collection backup
+  format 1 and app features are unchanged. Play enrollment is not completed.
+- Backed up Android source before editing under
+  backups/android-1.6.11-before-1.6.13-play.
+
+1.6.12 - 2026-10-11 (Windows only)
+- Desktop updates now use the official asentret GitHub feed by default,
+  including the standalone EXE. No manual URL setup is needed for new users.
+- Existing empty URLs adopt the default; custom URLs and disabled startup
+  checks are preserved. An empty URL field restores the official feed.
+- Startup checks remain limited to once per day; downloads and installation
+  stay user-controlled. Collection data is never uploaded by the checker.
+- Added generated release notes for this and every future app update,
+  alongside the changelog, version increment and source backup.
+- Android remains 1.6.11; format-1 collection backups are unchanged.
+- Backed up the previous desktop app and source under
+  backups/desktop-1.6.11-before-1.6.12 before editing.
+
+1.6.11 - 2026-10-11 (Windows and Android)
+- Updated the MIT copyright credit to "Copyright (c) 2026 Tristan (asentret)"
+  in license files, source archives, distribution packages and both user guides.
+- Preserved MIT terms, third-party exclusions and compatible collection saves.
+- Backed up both v1.6.10 apps and their source under
+  backups/before-1.6.11-credit before editing.
+
+1.6.10 - 2026-10-11 (Windows and Android)
+- Added the MIT license for original Fieldbook code and documentation.
+- Explicitly excluded Pokemon sprites/animations, third-party assets/data,
+  trademarks and dependencies, including payloads embedded in source files.
+- Included LICENSE.txt and THIRD-PARTY-NOTICES.txt in installer, portable
+  ZIP, Android APK, source archives and both offline user guides.
+- Preserved all existing attributions, signing identity and format-1 backups.
+- Backed up desktop 1.6.9 and Android 1.6.8 with their sources under
+  backups/before-1.6.10-licensing before editing.
+
+1.6.9 - 2026-10-11 (Windows only)
+- Added Settings > User guide to open the complete README inside the app.
+- Embedded the guide for offline access in installed, portable and single-file
+  builds, with scrolling, selectable text, light/dark themes and Close/Escape.
+- Kept the distributed README.txt and embedded guide in sync during builds.
+- Android remains v1.6.8; format-1 collection backups remain compatible.
+- Preserved the previous desktop app and source under
+  backups/desktop-1.6.7-before-1.6.9 before editing.
+
+1.6.8 - 2026-10-11 (Android only)
+- Added User guide under Settings in the three-line side menu.
+- Bundled the full README.txt for offline reading in a scrollable,
+  selectable-text reader that follows the lavender light/dark theme.
+- Close or Android Back returns to the collection without changing it.
+- Kept the existing Android signing identity and format-1 backups.
+  Windows remains v1.6.7.
+- Preserved Android v1.6.5 and its source before editing under
+  backups/android-1.6.5-before-1.6.8.
+
+1.6.7 - 2026-10-11 (Windows only)
+- Included the detailed plain-text README.txt user guide in the Windows
+  installer and portable ZIP. The Start menu Read Me shortcut opens it.
+- Maintain one guide source so future builds preserve the full user guide;
+  include it in the editable source archive and retain Read-Me.txt compatibility.
+- Preserved Android 1.6.5 and compatible format-1 collection backups.
+- Backed up the previous application and source under backups/1.6.6.
+
+1.6.6 - 2026-10-11 (Windows only)
+- Added Settings > Check for updates with a configurable HTTPS feed URL,
+  manual checks and optional startup checks at most once per day.
+- Checks run in the background with size limits, timeouts, strict feed
+  validation and HTTPS-only redirects. Offline failures do not block use.
+- New releases offer an installer download in the browser. Installation
+  remains manual; no collection data is uploaded or changed by checks.
+- Added update-feed templates, a feed generator and hosting instructions.
+  A published host URL must be configured before live checks can work.
+- Preserved format-1 backups and Android v1.6.5. Backed up both current
+  apps and sources under backups/1.6.5 before editing.
+
+1.6.5 - 2026-10-11
+- Animated the Crystal Sentret header on both Windows and Android, using
+  the same original 11-frame sprite, transparency, and frame timing.
+- Header animation works offline in both purple themes; hidden views stop
+  playback and resume when visible. Existing detail animations are retained.
+- Documented that the desktop installer upgrades existing installations;
+  the app has no automatic update checker or downloader.
+- Kept format-1 backups compatible. Backed up desktop 1.6.4 and Android
+  1.6.3 together under backups/1.6.4 before editing.
+
+1.6.4 - 2026-10-10 (Windows only)
+- Added looping animated sprites to the bottom Pokemon detail panel,
+  matching mobile: 993 frame animations and eight gentle idle fallbacks.
+- Decode only the selected species in a background worker. Stop playback
+  when hidden, cancel stale selections, and release frames on switching.
+- List sprites and Crystal Sentret remain static; assets work offline.
+- Kept format-1 backups compatible. Backed up the previous desktop 1.6.2
+  and Android 1.6.3 release under backups/1.6.3. Android remains v1.6.3.
+
+1.6.3 - 2026-10-10 (Android only)
+- Pokemon detail guides now show a looping animated sprite instead of a
+  static image. Animations are bundled for offline use and loaded only
+  when opening a guide; closing the guide releases the animation.
+- Included 993 multi-frame sprites; eight species without an available
+  animation use gentle native idle motion on their existing artwork.
+- Kept the list sprites, Crystal Sentret header, purple themes, and
+  desktop-compatible format-1 collection backups unchanged.
+- Backed up the complete previous release under backups/1.6.2.
+  Windows remains v1.6.2; this update changes the Android app only.
+
+1.6.2 - 2026-10-10
+- Replaced the three header silhouettes with one full-color static Sentret
+  sprite from Pokemon Crystal on both Windows and Android.
+- Preserved the lavender/purple light/dark themes, Android side menu,
+  offline assets, and desktop-compatible format-1 backups.
+- Updated both app versions, Help history, sources and installers.
+- Previous desktop 1.6.0 / Android 1.6.1 backed up under backups/1.6.1.
+
+1.6.1 - 2026-10-10 (Android only)
+- Replaced mobile File and Settings toolbar buttons with a three-line
+  menu opening a sliding left-side drawer in the lavender/purple theme.
+- File and Settings sections retain all backup actions, Help / updates,
+  light/dark toggle, and the game checklist reset confirmation.
+- Drawer scrolls on smaller screens and closes with its close button,
+  Android Back, tapping outside, or choosing an action.
+- Kept format-1 desktop-compatible backups and the original signing key.
+- Backed up the complete v1.6.0 release under backups/1.6.0.
+  Windows remains v1.6.0; this update changes the Android interface only.
+
+1.6.0 - 2026-10-10
+- Added a native Android app with all five games and eleven Pokédexes,
+  offline sprites and guides, rounded lavender/purple light/dark themes,
+  touch controls, game/dex progress, search, filters, undo and reset.
+- Added the complete manual HOME inventory editor on Android: quantity,
+  form/nickname, four moves, nature, six optional IVs, source and stable IDs.
+- Kept checklist and HOME format-1 JSON backups compatible with Windows.
+  Both imports preview changes and offer merge/replace; repeated HOME
+  merges do not duplicate entries. Transfers are manual, not cloud sync.
+- Added Android signing/build sources and cross-platform compatibility
+  tests. Android app updates keep data; export before uninstalling Android.
+- Preserved the Windows program and installer; updated version, metadata,
+  readme and embedded history. Previous release: backups/1.5.0.
+
+1.5.0 - 2026-10-10
+- Added a single Windows Setup EXE for easier sharing and installation.
+- Installs the fast app and bundled runtime for the current Windows user;
+  creates a Start menu entry and offers an optional desktop shortcut.
+- Added Windows Installed apps registration and an uninstaller. Existing
+  checklist, HOME collection and settings remain on update and uninstall.
+- Kept the portable ZIP, single-file app and complete editable source.
+- Updated version, metadata, readme and embedded changelog. Backed up
+  v1.4.2 source, executable and runtime in backups/1.4.2.
+
+1.4.2 - 2026-10-10
+- Replaced hand-drawn header shapes with silhouettes taken directly from
+  classic Black/White Pikachu, Eevee and Gengar 2D sprite alpha channels.
+- Preserved original pixel outlines and lavender/purple theme colors;
+  precompiled native masks require no downloads or image processing at launch.
+- Included original sprite assets and attribution in editable build sources.
+- Updated version, metadata, readme and embedded changelog. Backed up
+  v1.4.1 source, executable and bundled runtime in backups/1.4.1.
+
+1.4.1 - 2026-10-10
+- Increased lavender/purple background contrast and added original vector
+  Pikachu, Eevee and Gengar silhouettes with Poke Ball accents.
+- Added a faster one-folder Windows build that avoids extracting runtime
+  files on every launch. Keep _internal beside the executable.
+- Retained a self-contained single-file EXE as a portable alternative.
+- Updated version, metadata, readme and embedded changelog. Preserved
+  v1.4.0 executable, source and build inputs in backups/1.4.0.
+
+1.4.0 - 2026-10-10
+- Added offline field guides for every dex entry: step-by-step evolution
+  instructions, expanded version/DLC-specific encounter records, field
+  notes, pre-evolution acquisition hints and reference links.
+- Added Full guide reading windows and wrapped list previews. Search now
+  includes the expanded guidance. Full details remain in the lower pane.
+- Clarified game-specific Overqwil methods, Feebas fishing and Bloodmoon
+  Ursaluna requirements; removed the incorrect SV Peat Block evolution.
+- Added subtle lavender Poke Ball watermarks and field-map background
+  markings, adapting to light/dark themes without obscuring text.
+- Updated app, Windows metadata, readme and embedded changelog.
+- Backed up v1.3.3 source/executable/build inputs in backups/1.3.3.
+
+1.3.3 - 2026-10-10
+- Rounded search entries and dropdowns with matching light/dark themes
+  and visible keyboard focus; shortened search fields.
+- Enlarged list sprites from 48 to 72 pixels with taller rows and wider
+  sprite columns; narrowed the evolution/encounter hint column.
+- Double-click anywhere on a checklist row to mark it acquired. Already
+  acquired rows stay acquired. Checkbox clicks and Space still toggle.
+- HOME keeps double-click-to-edit behavior. Saves remain compatible.
+- Updated version, metadata, readme and embedded changelog; preserved
+  v1.3.2 source/executable/build inputs in backups/1.3.2.
+
+1.3.2 - 2026-10-10
+- Rounded the completion and every game sidebar progress bar, including
+  both tracks and fills, to match the rounded buttons in both themes.
+- Preserved progress values, resizing and selected-game colors.
+- Updated version, Windows metadata, readme and embedded changelog.
+- Archived v1.3.1 source, executable and build inputs in backups/1.3.1.
+
+1.3.1 - 2026-10-10
+- Windows title bars and the File/Settings menu strip now follow the
+  lavender light/dark theme, including dark-mode startup.
+- Compact Registered and Still to Discover cards leave more width for
+  the completion progress bar at all supported window sizes.
+- Preserved native window controls, dropdown menus and keyboard shortcuts.
+- Updated app version, Windows metadata, readme and embedded changelog.
+- Backed up v1.3.0 source, executable and build inputs in backups/1.3.0.
+
+1.3.0 — 2026-10-10
+- Rounded action and sidebar buttons with soft shadows, hover/pressed
+  feedback, disabled states, and visible keyboard focus outlines.
+- Added light and dark lavender themes. Settings > Dark mode toggles the
+  theme immediately and remembers it across launches in settings.json.
+- Added top-level File and Settings dropdown menus. File now contains
+  separate checklist and HOME import/export commands; the former toolbar
+  buttons have been removed. Ctrl+O/Ctrl+S still follow the active tab.
+- Moved Help / updates into Settings alongside the theme toggle.
+- Applied theme colors to lists, entries, details, dialogs, and progress.
+- Updated the version, Windows metadata, readme, and in-app changelog.
+- Archived the v1.2.0 source, executable, and build inputs in backups/1.2.0.
+- Existing checklist and HOME saves/backups remain compatible.
+
+1.2.0 — 2026-10-10
+- Added a Pokémon HOME sidebar tab for a separate manual collection.
+- Track species, optional form/nickname, quantity, four moves, nature,
+  six IVs (0-31 or unknown), and source game for each entry.
+- Added add/edit/duplicate/delete controls, search, source-game filtering,
+  species sprites, entry details, and live collection totals in the sidebar.
+- Multiple entries per species support different builds or source games;
+  quantity groups copies with the same recorded details.
+- HOME saves locally with automatic previous-save recovery. HOME changes
+  do not alter game checkmarks or connect to the Pokémon HOME service.
+- Added separate HOME backup export and previewed merge/replace import;
+  importing the same backup twice does not double entries or quantities.
+- Updated the version, Windows metadata, readme, and in-app changelog.
+- Preserved the v1.1.2 source, executable, and build inputs in backups/1.1.2.
+- Existing game checklist saves and backups remain compatible.
+
+1.1.2 — 2026-10-10
+- Added a live purple progress bar beneath each of the five sidebar games.
+- Each sidebar bar tracks unique registrations across that game's regional,
+  DLC, and National Pokédexes; overlapping species count only once.
+- Sidebar progress updates with checkboxes, undo, imports, and game resets.
+  Search and filters do not alter the game's completion total.
+- Clicking a sidebar progress bar also selects its game.
+- Updated the app version, Windows metadata, readme, and embedded changelog.
+- Backed up version 1.1.1 and editable sources under backups/1.1.1.
+- Existing progress and backup files remain compatible.
+
+1.1.1 — 2026-10-10
+- Replaced the completion percentage box with a lavender/purple progress
+  bar and a readable percentage label for the selected Pokédex.
+- Progress updates immediately when registrations change or a different
+  Pokédex is selected; search and filters do not change its overall total.
+- Updated the app version, Windows file details, and embedded changelog.
+- Preserved version 1.1.0 and editable sources in backups/1.1.0.
+- Existing saves and backup files remain compatible.
+
+1.1.0 — 2026-10-10
+- Replaced the green theme with lavender backgrounds, purple accents,
+  a plum sidebar, and a matching app icon.
+- Added static Pokémon sprites beside every checklist entry and a larger
+  image in the detail panel. Images are embedded for offline use.
+- Prefer newest available assets among the selected game groups: Legends
+  Z-A, Scarlet/Violet, Legends Arceus, then Sword/Shield/BDSP. Older images
+  fill gaps. Regional-form images follow each Pokédex's representative.
+- Show the app version in the title, sidebar, Help, and Windows file details.
+- Added this version history, also available in Help / updates.
+- Preserved all five games, eleven Pokédexes, evolution methods, encounter
+  hints, search/filter, local progress, and backup import/export.
+- Existing progress and JSON backups remain compatible (save format 1).
+- Archived the pre-update application and source as version 1.0.0 under
+  C:/Users/Tristan/Documents/Pokedex/backups/1.0.0.
+
+1.0.0 — 2026-10-10 — Original native release
+- Standalone Windows 11 x64 executable built from Python/Tkinter.
+- Five game groups, eleven complete Pokédexes, 2,914 numbered entries.
+- Evolution requirements and encounter hints; search and filters.
+- Locally saved checkboxes, backup import/export, undo, and save recovery.
+
+Maintenance: append a dated entry for each future release. Preserve the
+previous source before editing, increase the app version, and retain save
+compatibility unless a separately documented migration is required.

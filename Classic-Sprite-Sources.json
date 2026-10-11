@@ -1,0 +1,32 @@
+{
+  "161": {
+    "name": "Sentret",
+    "game": "Pokemon Crystal",
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/crystal/transparent/161.png",
+    "sha256": "dbee1fe7e674c962113145efbe3c0d6d71d0f7979a5e775ef4ce46695f96f171",
+    "usage": "Single full-color static header sprite; original pixels, transparent margins cropped.",
+    "copyright": "Pokemon / Nintendo / Creatures / GAME FREAK; sprite hosted by PokeAPI."
+  },
+  "161-animated": {
+    "name": "Sentret",
+    "game": "Pokemon Crystal",
+    "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/crystal/animated/161.gif",
+    "sha256": "556c2a93be716ff5e99ec9ae0d1b0c5de5e678323af3a7c8830ec5e129385678",
+    "frames": 11,
+    "durations_ms": [
+      250,
+      250,
+      250,
+      250,
+      420,
+      120,
+      120,
+      110,
+      120,
+      120,
+      1000
+    ],
+    "usage": "Looping header animation on Windows and Android; original colors, pixels, transparency and timing.",
+    "copyright": "Pokemon / Nintendo / Creatures / GAME FREAK; sprite hosted by PokeAPI."
+  }
+}

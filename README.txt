@@ -1,9 +1,9 @@
 POKEMON FIELDBOOK
 User Guide
 ======================================================================
-Windows version: 1.6.10
-Android version: 1.6.10
-Guide revision: 2.4 - October 11, 2026
+Windows version: 1.6.11
+Android version: 1.6.11
+Guide revision: 2.5 - October 11, 2026
 
 WELCOME
 ----------------------------------------------------------------------
@@ -51,7 +51,7 @@ install Python or any programming tools to use the packaged program.
 
 Recommended: use the installer
 
-  1. Locate Pokemon-Fieldbook-Setup-1.6.10.exe.
+  1. Locate Pokemon-Fieldbook-Setup-1.6.11.exe.
   2. Double-click it and follow the Setup instructions.
   3. Choose a desktop shortcut if you want one.
   4. Open Pokemon Fieldbook from the Start menu or your shortcut.
@@ -82,7 +82,7 @@ an independent collection. Close the current copy before opening another.
 ======================================================================
 The Android app requires Android 8.0 or newer.
 
-  1. Transfer Pokemon-Fieldbook-Android-1.6.10.apk to your phone.
+  1. Transfer Pokemon-Fieldbook-Android-1.6.11.apk to your phone.
   2. Open the APK using your phone's file manager or download screen.
   3. If prompted, allow that file manager or browser to install apps.
      The exact wording depends on the phone.
@@ -414,7 +414,7 @@ report you are up to date; that alone is not an error.
 
 Android updates
 
-Android 1.6.10 does not have an update checker. Obtain the newer APK from
+Android 1.6.11 does not have an update checker. Obtain the newer APK from
 the distributor and install it over the existing app. It must have the
 same package identity and signing key to work as an in-place update.
 Keep exported backups before any reinstall or device change.
@@ -530,7 +530,7 @@ notice follow, and are also distributed as separate text files.
 
 MIT License
 
-Copyright (c) 2026 Tristan
+Copyright (c) 2026 Tristan (asentret)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -650,6 +650,10 @@ third-party license notices with redistributed packages. If reusing only
 the original MIT-licensed code, keep excluded assets/data separate and
 obtain suitable replacements or permissions as needed.
 
+
+Guide revision 2.5 - October 11, 2026
+  Added asentret alongside Tristan in the copyright credit for both apps.
+  Both platforms are v1.6.11; license terms and exclusions are unchanged.
 
 Guide revision 2.4 - October 11, 2026
   Added the MIT code license and explicit exclusions for third-party material.

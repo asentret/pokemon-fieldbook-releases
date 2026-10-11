@@ -1,5 +1,12 @@
 POKÉMON FIELDBOOK — CHANGELOG
 
+1.6.11 - 2026-10-11 (Windows and Android)
+- Updated the MIT copyright credit to "Copyright (c) 2026 Tristan (asentret)"
+  in license files, source archives, distribution packages and both user guides.
+- Preserved MIT terms, third-party exclusions and compatible collection saves.
+- Backed up both v1.6.10 apps and their source under
+  backups/before-1.6.11-credit before editing.
+
 1.6.10 - 2026-10-11 (Windows and Android)
 - Added the MIT license for original Fieldbook code and documentation.
 - Explicitly excluded Pokemon sprites/animations, third-party assets/data,

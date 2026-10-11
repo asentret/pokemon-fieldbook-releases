@@ -1,12 +1,57 @@
-POKEMON FIELDBOOK
-User Guide
-======================================================================
-Windows version: 1.6.10
-Android version: 1.6.10
-Guide revision: 2.4 - October 11, 2026
+# Pokemon Fieldbook
 
-WELCOME
-----------------------------------------------------------------------
+Native Windows and Android Pokemon collection tracker by **Tristan (asentret)**.
+
+**Windows: 1.6.11 | Android: 1.6.11**  
+GitHub README revision 1.0 — October 11, 2026
+
+## Downloads and updates
+
+Open [Releases](https://github.com/asentret/pokemon-fieldbook-releases/releases/latest)
+and choose the latest release:
+
+- [Windows installer](https://github.com/asentret/pokemon-fieldbook-releases/releases/latest/download/Pokemon-Fieldbook-Setup-1.6.11.exe)
+- [Windows portable ZIP](https://github.com/asentret/pokemon-fieldbook-releases/releases/latest/download/Pokemon-Fieldbook-Windows.zip)
+- [Android APK](https://github.com/asentret/pokemon-fieldbook-releases/releases/latest/download/Pokemon-Fieldbook-Android-1.6.11.apk)
+
+Download links work once those files have been published as release assets.
+GitHub's automatically generated
+“Source code” downloads are not the installer or portable app.
+
+For desktop update checks, paste this URL in **Settings → Check for updates**:
+
+```text
+https://github.com/asentret/pokemon-fieldbook-releases/releases/latest/download/updates.json
+```
+
+The feed must be uploaded with the release before checks can work. Android
+currently receives updates by manually installing a newer compatible APK.
+
+The original code is [MIT licensed](LICENSE.txt). Pokemon sprites and other
+third-party material are **excluded**; see [third-party notices](THIRD-PARTY-NOTICES.txt).
+
+This Markdown guide has a clickable table of contents on GitHub. The
+[plain-text guide](README.txt) remains available for download and in the apps.
+
+## Contents
+
+1. [Install and open the Windows program](#1-install-and-open-the-windows-program)
+2. [Install and open the Android app](#2-install-and-open-the-android-app)
+3. [Your first collection checklist](#3-your-first-collection-checklist)
+4. [Included games and Pokedexes](#4-included-games-and-pokedexes)
+5. [Understand progress and overlapping entries](#5-understand-progress-and-overlapping-entries)
+6. [Search, filters, encounters, and evolution instructions](#6-search-filters-encounters-and-evolution-instructions)
+7. [Use the Pokemon HOME inventory](#7-use-the-pokemon-home-inventory)
+8. [Save, export, and restore your collection](#8-save-export-and-restore-your-collection)
+9. [Transfer between a computer and phone](#9-transfer-between-a-computer-and-phone)
+10. [Appearance, menus, and keyboard controls](#10-appearance-menus-and-keyboard-controls)
+11. [Check for and install updates](#11-check-for-and-install-updates)
+12. [Share the app with someone else](#12-share-the-app-with-someone-else)
+13. [Troubleshooting and common questions](#13-troubleshooting-and-common-questions)
+14. [Credits and guide history](#14-credits-and-guide-history)
+
+## Welcome
+
 Pokemon Fieldbook helps you keep track of the Pokemon you have collected
 across five game groups. Choose a game, browse its Pokedex, and mark each
 species as acquired. Progress bars show how much you have completed, while
@@ -26,44 +71,24 @@ read your actual game saves, catch or transfer Pokemon, or synchronize
 with the official Pokemon HOME service. Marking a species here records
 your own progress without changing anything in your games.
 
-CONTENTS
-----------------------------------------------------------------------
-  1. Install and open the Windows program
-  2. Install and open the Android app
-  3. Your first collection checklist
-  4. Included games and Pokedexes
-  5. Understand progress and overlapping entries
-  6. Search, filters, encounters, and evolution instructions
-  7. Use the Pokemon HOME inventory
-  8. Save, export, and restore your collection
-  9. Transfer between a computer and phone
- 10. Appearance, menus, and keyboard controls
- 11. Check for and install updates
- 12. Share the app with someone else
- 13. Troubleshooting and common questions
- 14. Credits and guide history
+## 1. Install and open the Windows program
 
-
-1. INSTALL AND OPEN THE WINDOWS PROGRAM
-======================================================================
 The Windows release is built for Windows 11 x64. You do not need to
 install Python or any programming tools to use the packaged program.
 
 Recommended: use the installer
-
-  1. Locate Pokemon-Fieldbook-Setup-1.6.10.exe.
-  2. Double-click it and follow the Setup instructions.
-  3. Choose a desktop shortcut if you want one.
-  4. Open Pokemon Fieldbook from the Start menu or your shortcut.
+1. Locate Pokemon-Fieldbook-Setup-1.6.11.exe.
+2. Double-click it and follow the Setup instructions.
+3. Choose a desktop shortcut if you want one.
+4. Open Pokemon Fieldbook from the Start menu or your shortcut.
 
 Setup installs for your current Windows account. The usual location is:
   %LOCALAPPDATA%\Programs\Pokemon Fieldbook
 
 Alternative: use the portable ZIP
-
-  1. Locate Pokemon-Fieldbook-Windows.zip.
-  2. Extract the entire ZIP to a folder you want to keep.
-  3. Open that folder and run Pokemon-Fieldbook.exe.
+1. Locate Pokemon-Fieldbook-Windows.zip.
+2. Extract the entire ZIP to a folder you want to keep.
+3. Open that folder and run Pokemon-Fieldbook.exe.
 
 Keep the _internal folder beside that executable. It contains required
 runtime files. Do not run the program directly from inside the ZIP or
@@ -77,16 +102,16 @@ All these Windows distributions use the same local collection folder
 for the same Windows account. Switching between them does not create
 an independent collection. Close the current copy before opening another.
 
+[Back to contents](#contents)
 
-2. INSTALL AND OPEN THE ANDROID APP
-======================================================================
+## 2. Install and open the Android app
+
 The Android app requires Android 8.0 or newer.
-
-  1. Transfer Pokemon-Fieldbook-Android-1.6.10.apk to your phone.
-  2. Open the APK using your phone's file manager or download screen.
-  3. If prompted, allow that file manager or browser to install apps.
+1. Transfer Pokemon-Fieldbook-Android-1.6.11.apk to your phone.
+2. Open the APK using your phone's file manager or download screen.
+3. If prompted, allow that file manager or browser to install apps.
      The exact wording depends on the phone.
-  4. Confirm installation, then open Pokemon Fieldbook.
+4. Confirm installation, then open Pokemon Fieldbook.
 
 Use the three-line menu to access file and settings actions. Choose
 User guide under Settings to read this complete guide inside the app,
@@ -101,15 +126,16 @@ IMPORTANT: Uninstalling the Android app or clearing its app storage
 removes its local collection. Export both kinds of backup first if you
 want to restore your checklist and HOME inventory afterward.
 
+[Back to contents](#contents)
 
-3. YOUR FIRST COLLECTION CHECKLIST
-======================================================================
-  1. Open Fieldbook and choose the game you want to track.
-  2. Choose one of that game's Pokedexes.
-  3. If applicable, choose the version of the paired games you play.
-  4. Find a Pokemon by browsing or using the search box.
-  5. Mark it acquired using its checkbox.
-  6. Watch the completion count and progress bar update.
+## 3. Your first collection checklist
+
+1. Open Fieldbook and choose the game you want to track.
+2. Choose one of that game's Pokedexes.
+3. If applicable, choose the version of the paired games you play.
+4. Find a Pokemon by browsing or using the search box.
+5. Mark it acquired using its checkbox.
+6. Watch the completion count and progress bar update.
 
 Your changes save locally as you make them. You do not need to export
 a file after every checkmark. Export is for making a separate backup
@@ -129,9 +155,10 @@ Reset game clears registrations for the selected game after confirmation;
 it is not needed for switching games or clearing a search. Export a
 backup before resetting progress that you might want later.
 
+[Back to contents](#contents)
 
-4. INCLUDED GAMES AND POKEDEXES
-======================================================================
+## 4. Included games and Pokedexes
+
 Pokemon Legends: Z-A
   Lumiose Pokedex ....................................... 232 entries
   Hyperspace Pokedex .................................... 132 entries
@@ -163,9 +190,10 @@ and event entries are included in the totals; inclusion does not mean
 an event is currently running or a Pokemon is obtainable without trades,
 transfers, DLC, or another stated requirement.
 
+[Back to contents](#contents)
 
-5. UNDERSTAND PROGRESS AND OVERLAPPING ENTRIES
-======================================================================
+## 5. Understand progress and overlapping entries
+
 The selected Pokedex shows registered and still-to-discover counts,
 with a completion bar. Each game also has a sidebar progress bar so
 you can see how your collections compare at a glance.
@@ -185,9 +213,10 @@ can differ from the sum of its individual Pokedex totals.
 HOME inventory is separate again: adding a Pokemon to HOME does not
 check it off in a game, and checking it off does not create a HOME entry.
 
+[Back to contents](#contents)
 
-6. SEARCH, FILTERS, ENCOUNTERS, AND EVOLUTION INSTRUCTIONS
-======================================================================
+## 6. Search, filters, encounters, and evolution instructions
+
 Use search to find a name, Pokedex number, location, item, move, or
 evolution requirement. Filters can narrow the list to registered or
 missing Pokemon and acquisition methods. Use the available sorting
@@ -217,9 +246,10 @@ available; eight species use a gentle idle-motion fallback. The header
 uses an animated Sentret sprite from Pokemon Crystal. Sprites are visual
 aids and do not represent every form or variation you may record.
 
+[Back to contents](#contents)
 
-7. USE THE POKEMON HOME INVENTORY
-======================================================================
+## 7. Use the Pokemon HOME inventory
+
 Open the Pokemon HOME tab to maintain a manual inventory of the Pokemon
 you keep in that service. No account sign-in is required or available.
 
@@ -256,9 +286,10 @@ Fieldbook stores what you enter. It does not verify move legality,
 retrieve IVs from your games, or confirm that the Pokemon is in your
 actual HOME account. Update your records when your real collection changes.
 
+[Back to contents](#contents)
 
-8. SAVE, EXPORT, AND RESTORE YOUR COLLECTION
-======================================================================
+## 8. Save, export, and restore your collection
+
 Automatic local saving
 
 Checklist changes save automatically. HOME edits save when you confirm
@@ -278,11 +309,10 @@ backups are still useful because they can be kept away from the device.
 Android uses app-private storage; use Export to obtain transferable files.
 
 Exporting a complete backup
-
-  1. On Windows, open File. On Android, open the three-line menu.
-  2. Choose Export checklist backup and save the JSON file.
-  3. Choose Export HOME backup and save that JSON file too.
-  4. Keep both files somewhere you can recover them later.
+1. On Windows, open File. On Android, open the three-line menu.
+2. Choose Export checklist backup and save the JSON file.
+3. Choose Export HOME backup and save that JSON file too.
+4. Keep both files somewhere you can recover them later.
 
 The checklist backup includes all five games, not just the currently
 selected Pokedex. The HOME backup includes the full HOME inventory.
@@ -317,22 +347,22 @@ created records of the same species can remain separate after a merge.
 An edited record with an existing ID will not overwrite that record on
 the destination during a merge.
 
+[Back to contents](#contents)
 
-9. TRANSFER BETWEEN A COMPUTER AND PHONE
-======================================================================
+## 9. Transfer between a computer and phone
+
 Windows and Android use compatible format-1 collection backups. Transfer
 is manual; neither device automatically knows what changed on the other.
-
-  1. On the device with the collection you want to transfer, export both
+1. On the device with the collection you want to transfer, export both
      the checklist backup and HOME backup.
-  2. Copy the two JSON files to the other device using USB, a cloud-drive
+2. Copy the two JSON files to the other device using USB, a cloud-drive
      folder, or another file-transfer method you normally use.
-  3. On the destination device, export its current collection first if
+3. On the destination device, export its current collection first if
      you want a recovery point.
-  4. Import the checklist file using Import checklist backup.
-  5. Import the HOME file using Import HOME backup.
-  6. Choose Merge or Replace according to the behavior in section 8.
-  7. Check your game progress and a few HOME entries after importing.
+4. Import the checklist file using Import checklist backup.
+5. Import the HOME file using Import HOME backup.
+6. Choose Merge or Replace according to the behavior in section 8.
+7. Check your game progress and a few HOME entries after importing.
 
 For a simple computer-to-phone workflow, finish edits on the computer,
 export both backups, and replace the phone's collection with those files.
@@ -347,9 +377,10 @@ Keep snapshots from both devices before deciding which state to restore.
 Collection backups do not transfer theme choices or update-check settings.
 Choose those settings separately on each device.
 
+[Back to contents](#contents)
 
-10. APPEARANCE, MENUS, AND KEYBOARD CONTROLS
-======================================================================
+## 10. Appearance, menus, and keyboard controls
+
 Windows has File and Settings menus at the top. Open Settings > User
 guide to read this complete README inside the app without internet or a
 separate text file. Scroll or select text to copy it; Ctrl+A selects all
@@ -372,16 +403,16 @@ Ctrl+S exports a backup; it is not required for normal automatic saving.
 When using the keyboard import/export shortcuts, check whether the HOME
 tab or a game checklist is active so you get the intended backup type.
 
+[Back to contents](#contents)
 
-11. CHECK FOR AND INSTALL UPDATES
-======================================================================
+## 11. Check for and install updates
+
 Windows update checker
-
-  1. Open Settings > Check for updates.
-  2. Enter the published HTTPS update-feed URL supplied by the person
+1. Open Settings > Check for updates.
+2. Enter the published HTTPS update-feed URL supplied by the person
      distributing the app.
-  3. Choose whether to check automatically at startup.
-  4. Save settings, or select Check now for an immediate check.
+3. Choose whether to check automatically at startup.
+4. Save settings, or select Check now for an immediate check.
 
 No hosting URL is configured in this release. Until a working published
 URL is entered, the checker cannot discover new releases. You do not
@@ -414,7 +445,7 @@ report you are up to date; that alone is not an error.
 
 Android updates
 
-Android 1.6.10 does not have an update checker. Obtain the newer APK from
+Android 1.6.11 does not have an update checker. Obtain the newer APK from
 the distributor and install it over the existing app. It must have the
 same package identity and signing key to work as an in-place update.
 Keep exported backups before any reinstall or device change.
@@ -426,9 +457,10 @@ Update-Hosting-Guide.txt and Update-Hosting-Kit.zip. The kit contains
 templates and a feed generator, not a live server or the app binaries.
 Ordinary users do not need these files to track or back up their collection.
 
+[Back to contents](#contents)
 
-12. SHARE THE APP WITH SOMEONE ELSE
-======================================================================
+## 12. Share the app with someone else
+
 For Windows, share the Setup EXE for the simplest installation, or share
 the complete portable ZIP. For Android, share the APK. Include this guide
 and the distributed asset-attribution files with your shared package.
@@ -442,9 +474,10 @@ Source archives are optional for users who only want to run the app.
 Private Android signing files and passwords are not part of the public
 distribution and should not be included when sharing.
 
+[Back to contents](#contents)
 
-13. TROUBLESHOOTING AND COMMON QUESTIONS
-======================================================================
+## 13. Troubleshooting and common questions
+
 The portable Windows program will not open.
   Extract the full ZIP. Confirm _internal is beside the executable.
   Alternatively, use the Setup EXE.
@@ -503,9 +536,10 @@ Android will not install an update over the old version.
   different package/signing identity cannot act as the same app's upgrade.
   Preserve backups before considering an uninstall.
 
+[Back to contents](#contents)
 
-14. CREDITS AND GUIDE HISTORY
-======================================================================
+## 14. Credits and guide history
+
 Pokemon Fieldbook is an unofficial fan-made tracker. Pokemon names and
 imagery belong to Nintendo, Creatures, and GAME FREAK. It is not an
 official Nintendo or Pokemon HOME product.
@@ -520,7 +554,7 @@ Help / updates. The app versions and collection backup format versions
 are separate; an app update does not automatically mean backups change.
 
 LICENSING
-----------------------------------------------------------------------
+
 The app's original code and original documentation are licensed under MIT.
 Pokemon sprites, animations, artwork, third-party data/text, trademarks,
 and dependencies are not covered by that license. This also applies to
@@ -530,7 +564,7 @@ notice follow, and are also distributed as separate text files.
 
 MIT License
 
-Copyright (c) 2026 Tristan
+Copyright (c) 2026 Tristan (asentret)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -550,7 +584,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-----------------------------------------------------------------------
+
 SCOPE NOTICE FOR POKEMON FIELDBOOK
 
 The MIT license above applies only to Pokemon Fieldbook's original program
@@ -564,7 +598,6 @@ for the scope details and attribution references.
 
 POKEMON FIELDBOOK - LICENSE SCOPE AND THIRD-PARTY NOTICES
 October 11, 2026
-======================================================================
 
 ORIGINAL CODE
 
@@ -651,6 +684,10 @@ the original MIT-licensed code, keep excluded assets/data separate and
 obtain suitable replacements or permissions as needed.
 
 
+Guide revision 2.5 - October 11, 2026
+  Added asentret alongside Tristan in the copyright credit for both apps.
+  Both platforms are v1.6.11; license terms and exclusions are unchanged.
+
 Guide revision 2.4 - October 11, 2026
   Added the MIT code license and explicit exclusions for third-party material.
   Both platforms are v1.6.10; collection backups remain compatible.
@@ -677,3 +714,6 @@ Guide revision 2.0 - October 11, 2026
 
 Guide revision 1.0 - October 11, 2026
   Initial README covering installation, features, backups, and updates.
+
+[Back to contents](#contents)
+

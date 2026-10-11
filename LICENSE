@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 asentret
+Copyright (c) 2026 Tristan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+----------------------------------------------------------------------
+SCOPE NOTICE FOR POKEMON FIELDBOOK
+
+The MIT license above applies only to Pokemon Fieldbook's original program
+code and original documentation, to the extent the licensor holds rights
+in them. It does not apply to Pokemon sprites, animations, artwork, logos,
+third-party data or text, trademarks, or bundled third-party software.
+Embedded or encoded third-party material remains excluded even when it
+appears inside a source-code file or executable. See THIRD-PARTY-NOTICES.txt
+for the scope details and attribution references.

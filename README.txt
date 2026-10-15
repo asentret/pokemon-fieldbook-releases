@@ -1,14 +1,14 @@
 POKEMON FIELDBOOK
 User Guide
 ======================================================================
-Windows version: 1.7.0
-Android version: 1.6.13
-Guide revision: 2.8 - October 11, 2026
+Windows version: 1.8.9
+Android version: 1.8.9
+Guide revision: 3.9 - October 13, 2026
 
 WELCOME
 ----------------------------------------------------------------------
 Pokemon Fieldbook helps you keep track of the Pokemon you have collected
-across five game groups. Choose a game, browse its Pokedex, and mark each
+across nine game groups. Choose a game, browse its Pokedex, and mark each
 species as acquired. Progress bars show how much you have completed, while
 encounter hints and evolution instructions help you plan what to get next.
 
@@ -25,6 +25,119 @@ Fieldbook is a manual tracker. It does not connect to Nintendo accounts,
 read your actual game saves, catch or transfer Pokemon, or synchronize
 with the official Pokemon HOME service. Marking a species here records
 your own progress without changing anything in your games.
+
+NEW IN 1.8.9: INLINE 3D DETAILS
+----------------------------------------------------------------------
+A downloaded model automatically replaces the detail sprite. On Windows,
+drag the model directly inside the bottom details panel; scroll to zoom.
+On Android, rotate and pinch to zoom inside the Pokemon guide. There is no
+View 3D button and no separate model window. The static image stays visible
+while loading or when this exact form has no verified model.
+Sprite-description text has been removed from the full guide. Variation
+information stays available in the checklist and Forms view.
+
+CONSISTENT ART AND OPTIONAL 3D
+----------------------------------------------------------------------
+Progress markers are larger and move smoothly, including during rapid
+checkbox changes. Hidden progress bars stop animating to save resources.
+
+Every checklist image now uses a 512 x 512 Pokemon HOME render from the
+same source family. The animated Crystal Sentret header remains unchanged.
+The detail panel shows the matching HOME image until its model is ready.
+Regional forms, genders and other variants keep separate, game-specific
+checks. Some distinctions cannot be seen in a front image: Torchic's tail
+spot, the underside authenticity marks on tea Pokemon, and Minior's core
+colors inside its shell. Read the Variation field for these differences.
+
+Select a Pokemon to see its available 3D model directly in the detail
+picture area, on Windows and inside the Android guide. Drag to rotate,
+scroll or pinch to zoom, and use Reset view to return to the front. Animated
+models offer Pause / Play. The viewer stops rendering while hidden.
+Windows 3D viewing needs Microsoft Edge WebView2 Runtime. If it is missing,
+Settings > 3D models includes a link to Microsoft's installer. Android uses
+the device's WebView; keep Android System WebView updated for 3D support.
+The native checklist and included images do not require the 3D viewer.
+
+Downloads are optional. Automatic downloading fetches that exact model the first
+time you open it, checks its size and SHA-256 checksum, and saves it locally.
+Later views use the verified cached model without needing a connection.
+Settings > 3D models on Windows, or 3D models in Android's side menu, shows
+the cached count and storage size. Choose Download all models to cache every
+available exact model. It shows the total size and progress, skips verified
+files already downloaded, and lets you cancel. Completed models remain saved;
+choose Download all models again to resume or retry missing files. Closing
+the settings dialog cancels the batch without deleting completed downloads.
+Turn off new downloads to use cached
+models only, or clear downloaded models to reclaim space. Clearing models
+does not remove any checklist, HOME record, or included image.
+
+Models missing an exact form match are labeled unavailable; the app does
+not substitute another form. A download error leaves the offline image
+and collection usable. Reselect the Pokemon after the connection or host recovers.
+Models come from the app's GitHub repository under model-downloads/v1.
+They must be published there before a new installation can download them.
+The catalog records each source and checksum. Models are separate from the
+installer and from your collection backups: each device downloads its own
+cache. Updating the app keeps compatible cached models and collection saves.
+
+App code © 2026 Tristan (asentret). This credit appears in both apps.
+Pokemon artwork/models remain third-party assets, not covered by the code's
+MIT license. Full attribution is in THIRD-PARTY-NOTICES.txt.
+
+POKEDEX NOTES AND HOENN GAMES
+----------------------------------------------------------------------
+The sidebar (Windows) and three-line drawer (Android) have collapsible
+Switch, Game Boy Advance, and DS / 3DS sections. Click or tap a section
+heading to expand it, then select a game. Each game keeps its progress bar.
+Expanded sections are remembered on that device. Scroll the game list if
+needed. Pokemon HOME remains a separate item outside these sections.
+
+Game Boy Advance: FireRed / LeafGreen (Kanto 151 + National 386),
+Ruby / Sapphire (Hoenn 202 + National 386), and a separate Emerald
+collection (Hoenn 202 + National 386).
+DS / 3DS: Sun / Moon, original 302-entry Alola Dex (not Ultra Sun/Moon).
+Switch: all five previously included game groups and their DLC Pokedexes.
+FireRed and LeafGreen share one game-group checklist, like the other paired
+games. Use the version filter for edition-specific locations and rates.
+Deoxys displays Attack Forme in FireRed and Defense Forme in LeafGreen;
+select an edition to switch its picture. Both forms can be tracked separately.
+
+There are now 18 Pokedexes and 4,929 official Pokedex entries, before forms.
+National Dex coverage includes trades and historical event Pokemon; it
+does not mean all 386 species can be caught in LeafGreen's grass.
+
+Field Notes display the Pokedex description from the selected game. In
+paired games, select an edition to read its text, or Both versions to see
+both labeled entries. Form-specific text is used where recorded; species
+text and missing form entries are labeled. No other game's entry is silently
+substituted. Previous acquisition advice is preserved under GUIDE NOTES.
+The separate Important Requirements section has been removed.
+Regional and National dexes share checks within each game group. Emerald
+is independent of Ruby/Sapphire, including backup progress.
+
+Open a Pokemon's full guide and scroll to ENCOUNTER RATES. Rates are
+specific to the edition, location, method, form and listed conditions.
+They describe that encounter table, not the chance a ball catches it.
+The bundled numerical tables cover Ruby/Sapphire, Emerald, FireRed/LeafGreen,
+Sun/Moon and Sword/Shield
+including its expansions. Other games show that verified rates are not
+available. Gifts/fixed encounters do not receive a random spawn percentage.
+SOS caller-specific odds are not verified, so no percentage is claimed.
+Missing data is never treated as a 0% chance. Sources are in each guide.
+
+Day/night encounter restrictions appear at the start of the checklist hint
+and under ENCOUNTER TIME in the full guide. Labels follow the selected
+edition, location and form. Search for daytime, nighttime, or an area name.
+A missing time label does not mean that every encounter is available all
+day. Timing for ordinary wild spawns does not automatically apply to raids,
+Alpha Pokemon, scripted encounters, gifts, trades or DLC areas. Evolution
+time requirements remain in the evolution steps. Moon uses its reversed
+in-game clock; the label refers to the phase inside the game.
+
+Update BOTH devices to 1.8.9 or newer before transferring checks for the
+new games/forms. Backup format 1 is retained; old backups import into this
+release. Older app versions cannot recognize the new game/form IDs. HOME
+inventory and existing game registrations remain separate and unchanged.
 
 CONTENTS
 ----------------------------------------------------------------------
@@ -51,7 +164,7 @@ install Python or any programming tools to use the packaged program.
 
 Recommended: use the installer
 
-  1. Locate Pokemon-Fieldbook-Setup-1.7.0.exe.
+  1. Locate Pokemon-Fieldbook-Setup-1.8.9.exe.
   2. Double-click it and follow the Setup instructions.
   3. Choose a desktop shortcut if you want one.
   4. Open Pokemon Fieldbook from the Start menu or your shortcut.
@@ -82,7 +195,7 @@ an independent collection. Close the current copy before opening another.
 ======================================================================
 The Android app requires Android 8.0 or newer.
 
-  1. Transfer Pokemon-Fieldbook-Android-1.6.13.apk to your phone.
+  1. Transfer Pokemon-Fieldbook-Android-1.8.9.apk to your phone.
   2. Open the APK using your phone's file manager or download screen.
   3. If prompted, allow that file manager or browser to install apps.
      The exact wording depends on the phone.
@@ -122,7 +235,7 @@ row and press Space to toggle its state.
 
 Selecting a row shows its details at the bottom of the Windows app.
 Drag the divider above the detail panel to give it more or less room.
-Use Full guide when you want a larger reading window.
+Drag the divider above the bottom panel upward when you want more room to read.
 
 If you make an accidental checklist change, use Undo where available.
 Reset game clears registrations for the selected game after confirmation;
@@ -153,9 +266,24 @@ Pokemon Sword / Shield
   Isle of Armor Pokedex ................................. 211 entries
   Crown Tundra Pokedex .................................. 210 entries
 
-Together these contain 2,914 numbered entries in 11 Pokedexes. Species
+Pokemon Ruby / Sapphire (Game Boy Advance)
+  Hoenn Pokedex ......................................... 202 entries
+  Generation III National Pokedex ....................... 386 entries
+
+Pokemon Emerald (Game Boy Advance; separate collection)
+  Hoenn Pokedex ......................................... 202 entries
+  Generation III National Pokedex ....................... 386 entries
+
+Pokemon FireRed / LeafGreen (Game Boy Advance)
+  Kanto Pokedex ......................................... 151 entries
+  Generation III National Pokedex ....................... 386 entries
+
+Pokemon Sun / Moon (DS / 3DS section)
+  Original Alola Pokedex ................................ 302 entries
+
+Together these contain 4,929 numbered entries in 18 Pokedexes. Species
 that appear in multiple Pokedexes for one game group overlap, producing
-2,347 independently tracked game/species combinations.
+3,807 independently tracked game/species combinations.
 
 These are species checklists. They do not separately track every form,
 gender, shiny variant, Mega Evolution, or Arceus research task. Mythical
@@ -167,7 +295,9 @@ transfers, DLC, or another stated requirement.
 5. UNDERSTAND PROGRESS AND OVERLAPPING ENTRIES
 ======================================================================
 The selected Pokedex shows registered and still-to-discover counts,
-with a completion bar. Each game also has a sidebar progress bar so
+with a lavender gradient completion bar, soft shine and a purple/lavender ball
+marker. The two-tone marker has a diamond-shaped clasp and crescent highlight.
+The marker glides to the new position when progress changes. Each game also has a sidebar progress bar so
 you can see how your collections compare at a glance.
 
 Within one game group, a species shares its registration across any
@@ -193,6 +323,12 @@ evolution requirement. Filters can narrow the list to registered or
 missing Pokemon and acquisition methods. Use the available sorting
 controls to change the order of the list.
 
+Switching Pokedexes within the same game (including regional, National and
+DLC dexes) keeps your search, registration and acquisition filters, sort
+order, edition and variant visibility active. Clear filters when you want
+to browse the full list again. A filter can legitimately return no matches
+in a different Pokedex.
+
 If you cannot find an expected entry, first check the selected game
 and Pokedex. Then use Clear filters and remove any search text. A
 registered/missing filter can hide an entry you just changed.
@@ -207,15 +343,19 @@ trades, moves, or other conditions. Follow the instructions for the
 selected game; requirements can differ between games. Pre-evolution
 hints help you start with the Pokemon needed for the evolution.
 
+On desktop, the complete guide appears in the bottom detail panel.
+The redundant Full guide button has been removed. Android opens the guide
+when you tap a Pokemon row; the Pokedex selector has a dropdown arrow.
+The full guide omits the Sources section to keep the description concise.
 The detailed guides and included sprites work offline. An Online source
 button opens an external reference in your browser and needs internet
 access to load that page. The app's bundled information does not refresh
 itself when an external website changes.
 
-The list uses static sprites. Detail views use animated sprites where
-available; eight species use a gentle idle-motion fallback. The header
-uses an animated Sentret sprite from Pokemon Crystal. Sprites are visual
-aids and do not represent every form or variation you may record.
+The checklist uses static Pokemon HOME renders. Detail views automatically
+show the matching downloaded 3D model when available; otherwise they keep
+the same static picture. The header uses animated Sentret from Pokemon
+Crystal. Read the Variation field for differences hidden from the front.
 
 
 7. USE THE POKEMON HOME INVENTORY
@@ -284,7 +424,7 @@ Exporting a complete backup
   3. Choose Export HOME backup and save that JSON file too.
   4. Keep both files somewhere you can recover them later.
 
-The checklist backup includes all five games, not just the currently
+The checklist backup includes all nine games, not just the currently
 selected Pokedex. The HOME backup includes the full HOME inventory.
 Export both even if you normally spend most of your time on one tab.
 Use dated folders or filenames to keep multiple snapshots organized.
@@ -298,7 +438,7 @@ purposes and must be imported using their corresponding commands.
 For checklists:
   Merge keeps your current registrations and adds those in the backup.
   Replace all restores registrations exactly as recorded in the backup
-  across all five games. Current checks missing from that backup are removed.
+  across all nine games. Current checks missing from that backup are removed.
 
 For HOME:
   Merge adds entries with new record IDs. If an ID already exists, the
@@ -418,7 +558,7 @@ report you are up to date; that alone is not an error.
 
 Android updates
 
-Android 1.6.13 does not have an update checker. Obtain the newer APK from
+Android does not have an in-app update checker. Obtain the newer APK from
 the distributor and install it over the existing app. It must have the
 same package identity and signing key to work as an in-place update.
 Keep exported backups before any reinstall or device change.
@@ -709,6 +849,131 @@ This release was built and launch-tested on Windows 11. Windows 10 API
 fallbacks are checked with simulated build numbers; a real Windows 10
 device test has not yet been performed.
 
-Starting at 1.7.0, versions count through 1.7.9, then 1.8.0, and so on.
-The final component never becomes 10. Android remains 1.6.13 for this
-desktop-only update; its next update will follow the new numbering rule.
+Starting at 1.7.0, patch numbers run from 0 through 9: 1.8.9 is followed
+by 1.9.0. Windows and Android release versions are kept aligned.
+
+
+FORMS, COLORS AND MATCHING VERSIONS (1.7.1)
+Install version 1.7.1 on BOTH your computer and phone before transferring
+form checks. Different old release numbers did not change the old backup
+schema; the new form identifiers require the new catalog on both devices.
+The apps show the same version in Help / updates. Old species and HOME
+backups still import normally. A new backup containing form IDs will be
+rejected by older apps, so keep an old export if you need to return to one.
+
+Choose a game, then Forms / colors. On desktop, the Forms button in the
+detail pane opens that species' forms; on Android it is in the detail guide.
+Search by name, form, color or number; use Missing/Acquired to filter.
+Each checkbox is separate for that game. The same form in another game
+has its own checkbox. Regional species counts keep their official totals;
+the forms window has a separate completion bar. Marking an original species
+never guesses which form you own, and checking a form does not change the
+species checkbox. Reset game clears its species and form checks together.
+
+Only persistent forms supported by each game are included, restricted to
+species covered by its included Pokédexes. This includes legitimate HOME
+transfers, trade access and past events; a listed form is not necessarily
+available as a current wild encounter. Temporary battle transformations
+are excluded. Male/female entries represent visible differences, including
+Hippowdon's different colors. These are normal gender colors, not shinies.
+Each form has a distinct label and its own correctly matched static image.
+Form detail images use the existing gentle-idle animation fallback.
+
+The HOME species picker also offers named forms, e.g. Meowth (Alolan).
+Use separate inventory entries to retain quantity, moves, nature, IVs and
+source game for each form. Existing free-text form/nickname notes stay intact.
+HOME is still a manual inventory; selecting a form does not transfer it.
+
+Use the x beside a text field to clear just that field. Search clearing
+keeps other filters unchanged. On desktop, Escape in a search field also
+clears it. Clear filters remains available to reset all filters together.
+
+Form metadata/sprites: PokeAPI (https://pokeapi.co/).
+Game availability reference: PKHeX personal tables
+(https://github.com/kwsch/PKHeX). Detailed URLs are in Form-Sources.json.
+These third-party data/images are excluded from the app code's MIT license.
+
+Both desktop and Android are 1.8.9. Existing form backups import from 1.7.1; new-game/form checks require 1.8.9 on both devices.
+Form data and sprites are third-party material; see form source records and
+PKHeX-LICENSE.txt. Each form check belongs to its selected game.
+
+SHOW OR HIDE VARIANT FORMS (1.7.2)
+On Windows, open Settings and uncheck Show variant forms.
+On Android, open the three-line drawer and choose Hide variant forms.
+Choose Show variant forms there to turn the feature back on.
+This hides the game Forms / colors buttons and desktop form totals.
+Existing form checks are kept, including in checklist exports/imports.
+Turning forms back on restores access to all your checks. Species lists,
+official Pokédex totals, and your manual HOME inventory stay unchanged.
+The preference is remembered separately on each device and is not part of
+collection backups. It defaults to on, including when upgrading older apps.
+
+INSTALLER AND PORTABLE DOWNLOAD (1.7.5)
+The Windows installer icon is the purple/lavender ball again. Crystal Sentret
+appears inside setup on the page offering Create a desktop shortcut.
+The checkbox remains optional and is unchecked on a fresh installation.
+Unused NumPy libraries and unused image-format plugins are excluded from
+the Windows runtime. Required Python, Tcl/Tk GUI, PNG/GIF image support,
+offline Pokemon data and animations are retained. Setup uses ZIP compression
+for faster extraction; installation time still depends on your computer.
+Known obsolete runtime files are removed on upgrade, never collection saves.
+The portable ZIP contains the runnable app and user guides. Download the
+separate Editable Source ZIP for build source, or Pokemon-Fieldbook.py for
+the standalone Python source. Keep _internal beside the portable EXE.
+Android is also 1.7.5 to keep release versions aligned; its features and
+launcher icon are unchanged. Collection backups remain compatible.
+
+SMALLER WINDOWS RUNTIME (1.7.5)
+Unused Tcl time-zone tables and non-English interface catalogs are omitted.
+English messages, text encodings, Unicode Pokemon names, animations and
+offline data remain included. Fieldbook uses Python/Windows for timestamps.
+This reduces the number of files setup extracts; actual timing varies by PC.
+Collection saves and format-1 backups are unchanged.
+
+INLINE VARIANTS (1.7.6)
+When Show variant forms is enabled, supported forms appear beneath their
+species in the regular checklist for that game and Pokedex. Each variant
+has its own checkbox, sprite, name and variation description. Search and
+status filters include those rows. Progress includes both species entries
+and displayed forms; official species Pokedex totals remain unchanged.
+Species registration and specific-form checks are independent, preserving
+your old saves. Hiding forms restores species-only totals without deleting
+form checks. Checklist backups still transfer between desktop and Android.
+Hints distinguish form-specific guidance from general species reference.
+Some forms legitimately share a front view; read their variation note.
+Clear buttons now sit inside text fields. Desktop uses a transparent round
+purple/lavender ball icon, and Sentret animates on setup's shortcut-choice page.
+
+MATCHING SPRITES (1.8.9)
+Static checklist pictures use consistent Pokemon HOME renders. The detail
+picture changes to the matching 3D model when ready. Missing models retain
+the verified static picture. Gender hints describe physical differences.
+
+Variation details have their own desktop column and labeled Android row
+section. Additional form information is available in the Forms view.
+
+
+1.8.9 — SOURCES AND GUIDE IMPROVEMENTS
+The Sources button opens an offline popup with collapsible Sprite, Details,
+Animations and Misc sections. Open a link to visit its website. Hosted 3D
+models link to the Fieldbook GitHub repository. The links follow the selected
+Pokemon/form and sprite; they do not upload your collection.
+Encounter Time is omitted when no verified record exists for the selected
+edition. Missing timing does not imply an all-day encounter.
+Unrecorded form hints say "Click/tap for full details". Forms/colors checkboxes
+have reserved space beside the sprite. Inline 3D lighting is less bright.
+These guide improvements are included in version 1.8.9.
+
+The 3D viewer uses a transparent scene background. Android shows the guide beneath it; Windows matches the guide surface color to avoid a white rectangle in dark mode.
+
+
+1.8.9 — SHINY MODEL PREVIEW
+Use the small Shiny checkbox beside the model status to choose normal or shiny
+3D appearance. This is a viewing preference; it does not mark a Pokemon caught
+or change the Pokemon HOME inventory. Each appearance downloads when first
+viewed and stays cached for offline use. Download all includes both appearances
+when the catalog provides them. A disabled Shiny checkbox means the bundled
+catalog does not yet provide that exact shiny model.
+Version 1.8.9 includes 2,767 unique animated model files (normal and shiny).
+Downloading the complete optional pack uses about 5.1 GB of storage.
+Models download individually on first view; you do not need the entire pack.

@@ -1,5 +1,268 @@
 POKÉMON FIELDBOOK — CHANGELOG
 
+1.8.9 - 2026-10-15 (Windows and Android)
+- Add data-driven animated material playback for 11 Paradox species in
+  both normal and shiny colors, retaining their original body animations.
+- Bake the material effects into offline texture assets, with shared
+  textures and wrapped edge padding to limit memory and visible seams.
+- Keep material playback synchronized with pause and visibility controls.
+- Restore source-defined idle blade visibility for Iron Valiant and
+  ignore animated scale for Iron Bundle, in both normal and shiny models.
+- Preserve prior source, collection data and compatible backups.
+- Published the accumulated model and guide improvements from held builds
+  1.8.5 through 1.8.9: normal/shiny model toggle, recovered model coverage,
+  original Ponyta/Rapidash flames, transparent darker 3D viewer, grouped
+  source links, cleaner encounter guidance and separate form checkboxes.
+- Remove cap Pikachu from selectable lists while preserving old backups.
+- Improve Android startup memory use and keep animated models in frame.
+- Optional full normal/shiny model download is approximately 5.1 GB.
+
+1.8.8 - 2026-10-15 (Windows and Android; unpublished)
+- Remove all eight cap Pikachu forms from checklists, HOME suggestions,
+  bundled sprites and the normal/shiny model download catalog.
+- Preserve older cap registrations in format-1 backups without counting
+  them toward completion. Ordinary Pikachu and gender variants remain.
+- Integrate original Ponyta flame masks and normal/shiny flame animation.
+- Preserve the previous source and staged apps in a verified backup.
+- Release remains ON HOLD while remaining material checks continue.
+
+1.8.7 - 2026-10-15 (Windows and Android; unpublished integration build)
+- Integrate the recovered animated normal/shiny model catalog into both apps.
+- Include verified original flame masks, layered eyes, texture animation and
+  transparent-surface fixes in the shared offline viewer.
+- Preserve per-form cache identities and all collection/backup formats.
+- Identify outdated Android WebView runtimes promptly and explain how to
+  restore 3D support while retaining the offline sprite.
+- Retain the previous source and staged apps in a verified versioned backup.
+- Release remains ON HOLD. Some material fidelity checks and full platform
+  validation remain incomplete. New model files are not published yet.
+
+1.8.6 - 2026-10-15 (Windows and Android; unpublished, verification in progress)
+- Prepare a compact Shiny checkbox beside the inline model status on both apps.
+- Keep normal and shiny model downloads independently verified and cached.
+- Preserve viewer preference separately from checklist and HOME backups.
+- Remove the unobtainable Eternamax battle form from both checklist catalogs;
+  retain older registrations in format-1 backups without counting them.
+- Model recovery now has normal/shiny candidates for every in-scope model key;
+  visual review and renderer integration remain release blockers.
+- Repair independent texture-mask channels in 178 research model files.
+- Restore source-defined inward surfaces and unlit effects in 166 candidate
+  files; repair Gastly's invalid joint-index encoding and hidden face.
+- Check cap Pikachu against original HOME materials and remove unsupported
+  shiny base recoloring; exact shadow treatment remains under verification.
+- Verify recovered HOME animation clips and develop corrected eye layering,
+  secondary texture coordinates, transparent shells and original flame colors.
+  These renderer changes are still in isolated verification previews.
+- Preserved the complete staged 1.8.5 build and exact editable source.
+- Release remains ON HOLD. No GitHub publication or update-feed change.
+
+1.8.5 - 2026-10-15 (Windows and Android; unpublished)
+- Added a per-Pokemon Sources popup with collapsible Sprite, Details,
+  Animations and Misc sections. Hosted models link to the Fieldbook GitHub.
+- Hide Encounter Time when the selected edition has no verified timing.
+- Shortened unrecorded form acquisition hints to "Click/tap for full details".
+- Reserved separate checkbox/sprite columns in Forms / colors.
+- Reduced inline 3D exposure and light intensity on both platforms.
+- Transparent 3D canvas/page backgrounds; Android blends with its parent and Windows matches the exact guide surface, including dark mode.
+- Stream Android catalog loading and reuse repeated text to prevent startup memory exhaustion on smaller heaps.
+- Fit the 3D camera to the animated pose range so animations remain in view.
+- Preserved 1.8.4 source/apps and format-1 collection compatibility.
+- Model coverage and shiny conversion remain under review; not published.
+
+1.8.4 - 2026-10-13 (Windows and Android)
+- Replaced the View 3D button and separate desktop model window with an
+  inline model viewport in the bottom detail panel. Cached models appear
+  automatically; drag to rotate and scroll to zoom in place.
+- Android guides also display available models automatically, with drag
+  rotation and pinch zoom. The static sprite remains visible during loading
+  and when a model is unavailable or cannot be displayed.
+- Preserved optional automatic downloads, Download all, verified offline
+  caching and exact-form matching. Selection changes cancel outdated work;
+  embedded viewers follow panel size/visibility and close with their parent.
+- Removed sprite-description text and the duplicate variation-description
+  section from full guides. Variation information remains in its dedicated
+  checklist field and Forms view.
+- Reserved the detail panel's actual content height to prevent clipping.
+- Kept versions and format-1 backups compatible, preserved the old source,
+  and refreshed the user guide, changelog and release notes.
+
+1.8.3 - 2026-10-13 (Windows and Android)
+- Replaced mixed checklist art with high-resolution 512 x 512 Pokemon HOME
+  renders. Preserved exact per-game form IDs and documented front-view
+  limitations for hidden markings. Crystal Sentret stays animated.
+- Added optional rotatable 3D detail models with bundled offline rendering.
+  View 3D downloads the selected exact model on first use, verifies its size
+  and checksum, then caches it for offline viewing. Unavailable forms use
+  the matching HOME image instead of an incorrect model.
+- Added Download all models on both platforms, with progress, cancellation,
+  checksum-verified skipping of existing models and resumable batches.
+- Added download preferences, cached-model storage totals and cache clearing
+  separately from checklist/HOME saves. Prepared a versioned model-downloads
+  folder for the app's GitHub repository; no files were published.
+- Expanded Toxtricity evolution steps with all 13 Amped and 12 Low Key
+  natures, Level 30 instructions and the original-Nature/Mint distinction.
+- Enlarged progress markers, especially in sidebars, and smoothed motion
+  with time-based spring animation that retains momentum on rapid changes.
+  Desktop reuses cached artwork; Android follows the display frame rate.
+- Added visible, unobtrusive "App code © 2026 Tristan (asentret)" credits.
+- Removed bundled Pokemon detail GIFs now replaced by HOME stills/3D.
+  Windows uses WebView2 for the optional 3D window; Android uses WebView.
+- Kept Windows/Android versions and format-1 backups compatible. Preserved
+  pre-change source/apps and refreshed the user guide and release notes.
+
+1.8.2 - 2026-10-13 (Windows and Android)
+- Removed the Sources & Coverage section from full guides. The Online
+  source button and bundled source attribution remain available.
+- Added lavender gradient progress bars with a soft shine, depth and purple
+  ball markers. Progress changes animate smoothly; hidden bars do not
+  keep animating. Main, sidebar and variant meters use the new design.
+- Removed the redundant desktop Full guide button; the complete guide
+  remains in the bottom detail panel beside the Online source action.
+- Added a visible dropdown arrow to Android's Pokedex selector.
+- The moving marker uses purple/lavender colors and a diamond clasp.
+- Preserved 1.8.1 source and apps in backups/1.8.1-before-1.8.2. Updated
+  the user guide, changelog, release notes and matching release files.
+
+1.8.1 - 2026-10-13 (Windows and Android)
+- Switching between regional, National or DLC Pokedexes within a game now
+  preserves search text, registration and acquisition filters, sort order,
+  selected edition and variant visibility on desktop and Android.
+- Clear filters remains available for starting a new search. Empty results
+  keep the active filters instead of silently resetting them.
+- Preserved 1.8.0 source and apps in backups/1.8.0-before-1.8.1. Updated
+  the user guide, changelog, release notes and matching release files.
+
+1.8.0 - 2026-10-13 (Windows and Android)
+- Added verified daytime/nighttime encounter labels to checklist hints and
+  full guides, with location/form scope and distinct evolution requirements.
+- Removed the Important Requirements section from both full guides.
+- Field Notes now show the selected game's Pokedex entry, with edition
+  labels and form-specific text where recorded. Acquisition advice remains
+  separately available in Guide Notes; missing entries are explicitly noted.
+- Added Ruby/Sapphire and a separate Emerald collection, each with the
+  202-entry Hoenn and 386-entry National Dexes, historical evolution methods,
+  edition-specific encounter hints/rates and game-supported forms.
+- Added FireRed/LeafGreen's 151-entry Kanto Dex beside its existing National
+  Dex. Overlapping dexes share checks within each game; old IDs are retained.
+- Nine game groups, eighteen dexes and 4,929 numbered entries. Checklist and
+  HOME backup format 1 is unchanged; update both devices for new game IDs.
+- Preserved 1.7.9 source/apps in backups/1.7.9-before-1.8.0. Updated the
+  user guide, changelog, release notes and coordinated release files.
+
+1.7.9 - 2026-10-12 (Windows and Android)
+- Added FireRed alongside LeafGreen in a combined 386-entry National Dex,
+  with edition-specific hints/rates and a FireRed / LeafGreen version filter.
+- Deoxys switches between Attack and Defense artwork with the edition;
+  both obtainable forms have independent checks and clear edition guidance.
+- Includes Sun/Moon's 302-entry Alola Dex and collapsible Switch, Game Boy
+  Advance and DS / 3DS sections, with Pokemon HOME kept separate.
+- Full guides include verified encounter rates for FireRed/LeafGreen,
+  Sun/Moon and Sword/Shield, retaining method, edition and conditions.
+- Preserves prior checklist IDs and HOME data. Update both devices to 1.7.9
+  before transferring the new games/forms. Updated guide and release notes.
+- Preserved the prepared 1.7.8 source/apps in backups/before-1.7.9-firered;
+  the previously delivered 1.7.7 backup also remains intact.
+
+1.7.8 - 2026-10-12 (Windows and Android)
+- Added LeafGreen's full 386-entry National Dex and Sun/Moon's original
+  302-entry Alola Dex, with game-specific evolution rules and encounter hints.
+- Added collapsible Switch, Game Boy Advance and DS / 3DS navigation groups,
+  remembered on each device. Pokemon HOME remains outside the groups.
+- Added full-guide encounter rates for LeafGreen, Sun/Moon and Sword/Shield
+  with edition, area, method, form and conditions. Unknown rates and SOS
+  caller odds are explicitly unverified; gifts are not random spawn odds.
+- Added matching animated/static sprites and scoped forms for the new games.
+- Preserved existing collection IDs and backup format 1. Update both devices
+  to 1.7.8 before transferring new-game or new-form registrations.
+- Updated the embedded guide, changelog and release notes on both platforms.
+- Backed up old source/apps in backups/before-1.7.8-platforms-encounters.
+
+1.7.7 - 2026-10-12 (Windows and Android)
+- Simplified level-only evolution steps and removed generic regional/gender
+  reminders. Menu evolution instructions appear only in games that use them.
+- Added a dedicated desktop Variation column and a separate Android row
+  section. Encounter hints now contain only acquisition guidance.
+- Checklist sprites use the first frame of their exact-form detail animation.
+  Forms without a matching animation retain verified artwork and gentle idle
+  motion; they no longer borrow a different form's species animation.
+- Added specific male/female appearance comparisons, including Meganium's
+  longer male antennae and shorter female antennae.
+- Reserved header space for Sentret so the version selector cannot overlap it.
+- Compacted the top controls on desktop and Android and enlarged checklist
+  sprites. Android's game selector now shares the navigation-menu row.
+- Preserved collection IDs, progress, HOME inventory and format-1 backups.
+- Backed up source/apps in backups/before-1.7.7-matching-sprites.
+
+1.7.6 - 2026-10-12 (Windows and Android)
+- Enabled variants now appear in the normal checklist beneath their species,
+  restricted to that game's supported forms and the selected Pokedex.
+- Added explicit variant names and descriptions in encounter hints, including
+  color/gender distinctions and notes for forms with identical front views.
+- Progress includes visible variant entries; hiding them preserves all checks.
+  Existing species registrations and form registrations remain independent.
+- Included the staged clear buttons inside desktop and Android text fields.
+- Desktop icon is now a circular purple/lavender ball with transparent corners.
+- Installer Sentret animates using the same Crystal frames as the app.
+- Audited variant image mappings and duplicates; retained correct identical
+  views rather than inventing visual differences. See Variant-Sprite-Audit.json.
+- Backed up source/apps in backups/before-1.7.6-inline-variants.
+
+1.7.5 - 2026-10-12 (Windows and Android)
+- Removed unused Tcl time-zone database and non-English Tcl/Tk message
+  catalogs from both Windows builds to reduce installation file operations.
+- Retained English catalogs, all character encodings and core GUI scripts.
+  App dates and backup timestamps continue to use Python and Windows.
+- Upgrades remove only exact known obsolete runtime files; saves are kept.
+- Android version aligned at 1.7.5; no Android feature changes.
+- Backed up prior source/apps in backups/before-1.7.5-trim-runtime.
+
+1.7.4 - 2026-10-12 (Windows and Android)
+- Restored the purple/lavender ball installer icon; placed Crystal Sentret
+  inside setup beside the optional Create a desktop shortcut checkbox.
+- Removed unused NumPy/native libraries and unnecessary image plugins
+  from Windows builds, retaining PNG/GIF animation and all offline data.
+- Switched setup to fast ZIP extraction and removed the duplicate full
+  Python source from the portable ZIP; editable source remains separate.
+- Upgrades clean up only known obsolete runtime files within the app folder.
+  Collection saves and settings are preserved.
+- Aligned desktop/Android at 1.7.4; Android behavior is unchanged.
+- Backed up old source/apps in backups/before-1.7.4-installer-sentret-page.
+
+1.7.3 - 2026-10-12 (Windows and Android)
+- Changed the Windows installer EXE icon to the original Crystal Sentret
+  sprite already used by the app, with seven icon sizes for Windows.
+- Kept the installed desktop app's purple/lavender ball icon unchanged.
+- Aligned Android at 1.7.3; no Android feature or launcher-icon changes.
+- Preserved collection saves, variant visibility preferences, backup
+  compatibility, and both existing Android signing identities.
+- Backed up the prior source/apps in backups/before-1.7.3-sentret-installer.
+
+1.7.2 - 2026-10-12 (Windows and Android)
+- Added a saved Show variant forms option under desktop Settings and a
+  Hide/Show variant forms action in the Android navigation drawer.
+- Hiding forms removes game form buttons and desktop form totals without
+  deleting checks. Saved forms still import/export and return when enabled.
+- Preferences are local to each device. Species progress and HOME inventory
+  stay unchanged; theme changes preserve the variant visibility setting.
+- Kept desktop and Android at 1.7.2 with compatible format-1 backups.
+- Preserved old apps and source in backups/before-1.7.2-variant-toggle.
+
+1.7.1 - 2026-10-11 (Windows and Android)
+- Aligned both apps at 1.7.1 with the same offline form catalog and backup
+  identifiers. Old species and HOME backups remain readable.
+- Added clear (x) controls beside search fields and HOME text fields.
+- Added separately acquired forms/colors within each game, with distinct
+  sprites for regional forms and visible gender differences such as
+  Hippowdon. Availability is restricted per game, including supported
+  transfers and past events. Species Pokédex totals remain unchanged.
+- Added form-aware HOME species choices and per-game form progress/filtering.
+- Form checks travel in checklist backups; use 1.7.1 on both devices to
+  transfer them. Old versions reject unknown form IDs rather than import them.
+- Existing species checks are preserved without guessing acquired forms.
+- Backed up both apps and their source under backups/before-1.7.1-forms.
+- Retained Windows 10/11 x64 and Android 8+ support, original Android app
+  signing identity, and separate Play upload key.
+
 1.7.0 - 2026-10-11 (Windows only)
 - Added Windows 10 64-bit support alongside Windows 11. Installer minimum
   is now Windows 10 build 10240 instead of Windows 11 build 22000.
@@ -179,7 +442,7 @@ POKÉMON FIELDBOOK — CHANGELOG
 
 1.4.1 - 2026-10-10
 - Increased lavender/purple background contrast and added original vector
-  Pikachu, Eevee and Gengar silhouettes with Poke Ball accents.
+  Pikachu, Eevee and Gengar silhouettes with ball accents.
 - Added a faster one-folder Windows build that avoids extracting runtime
   files on every launch. Keep _internal beside the executable.
 - Retained a self-contained single-file EXE as a portable alternative.
@@ -194,7 +457,7 @@ POKÉMON FIELDBOOK — CHANGELOG
   includes the expanded guidance. Full details remain in the lower pane.
 - Clarified game-specific Overqwil methods, Feebas fishing and Bloodmoon
   Ursaluna requirements; removed the incorrect SV Peat Block evolution.
-- Added subtle lavender Poke Ball watermarks and field-map background
+- Added subtle lavender ball watermarks and field-map background
   markings, adapting to light/dark themes without obscuring text.
 - Updated app, Windows metadata, readme and embedded changelog.
 - Backed up v1.3.3 source/executable/build inputs in backups/1.3.3.
@@ -301,3 +564,5 @@ POKÉMON FIELDBOOK — CHANGELOG
 Maintenance: append a dated entry for each future release. Preserve the
 previous source before editing, increase the app version, and retain save
 compatibility unless a separately documented migration is required.
+
+

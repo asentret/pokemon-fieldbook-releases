@@ -1,23 +1,26 @@
-# Pokemon Fieldbook v1.7.0
+# Pokemon Fieldbook v1.8.9
 
-2026-10-11 (Windows only)
+2026-10-15 (Windows and Android)
 
-Windows **1.7.0** · Android **1.6.13**
+Windows **1.8.9** · Android **1.8.9**
 
 ## Changes
 
-- Added Windows 10 64-bit support alongside Windows 11. Installer minimum
-  is now Windows 10 build 10240 instead of Windows 11 build 22000.
-- Windows 10 uses its standard native title bar; the lavender/purple app
-  theme, menus, light/dark modes and collection features remain available.
-- Windows 11 retains its custom themed title bar.
-- Started the 1.7 series. Future versions roll from X.Y.9 to X.(Y+1).0
-  instead of X.Y.10. Existing historical version numbers are retained.
-- Android remains 1.6.13; collection backup format 1 is unchanged.
-- Preserved the previous source, executable and runtime under
-  backups/desktop-1.6.12-before-1.7.0 before editing.
-- Windows 11 launch/installer tests and simulated Windows 10 fallback
-  checks are run for this release; a real Windows 10 test is still pending.
+- Add data-driven animated material playback for 11 Paradox species in
+  both normal and shiny colors, retaining their original body animations.
+- Bake the material effects into offline texture assets, with shared
+  textures and wrapped edge padding to limit memory and visible seams.
+- Keep material playback synchronized with pause and visibility controls.
+- Restore source-defined idle blade visibility for Iron Valiant and
+  ignore animated scale for Iron Bundle, in both normal and shiny models.
+- Preserve prior source, collection data and compatible backups.
+- Published the accumulated model and guide improvements from held builds
+  1.8.5 through 1.8.9: normal/shiny model toggle, recovered model coverage,
+  original Ponyta/Rapidash flames, transparent darker 3D viewer, grouped
+  source links, cleaner encounter guidance and separate form checkboxes.
+- Remove cap Pikachu from selectable lists while preserving old backups.
+- Improve Android startup memory use and keep animated models in frame.
+- Optional full normal/shiny model download is approximately 5.1 GB.
 
 ## Installation and backups
 

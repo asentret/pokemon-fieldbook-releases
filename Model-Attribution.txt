@@ -1,3 +1,18 @@
+POKEMON FIELDBOOK v1.8.9 ANIMATED MODEL ADDITIONS
+The current animated normal/shiny catalog is catalog-v1.json.
+Pack downloads and original material reference URLs/hashes are recorded in
+Animated-Model-Sources.json. Generations model packs are published through
+Modrinth; HOME material references are hosted by Lilothestitch16 on GitHub.
+Pokemon designs, models, textures and animations are third-party assets and
+are NOT covered by the app code MIT license. Source credits are provenance,
+not a grant of ownership over Pokemon intellectual property.
+RareCandy (https://github.com/GenerationsMod/RareCandy) is GPL-3.0 reference
+software used in offline research. Its code is not included in the MIT app
+runtime; the generic texture-atlas playback code was independently authored.
+
+Legacy static models remain available for earlier application versions.
+The following older attribution entries apply only to their named assets.
+
 POKEMON FIELDBOOK — 3D MODEL ATTRIBUTION
 App code © 2026 Tristan (asentret). Third-party models are NOT included in the code MIT license.
 The following author/license/source claims are preserved from the upstream GLB metadata.

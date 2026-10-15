@@ -85,3 +85,28 @@ Retain LICENSE.txt, this notice, asset-source records, and any applicable
 third-party license notices with redistributed packages. If reusing only
 the original MIT-licensed code, keep excluded assets/data separate and
 obtain suitable replacements or permissions as needed.
+
+
+FORM DATA AND SPRITES (1.7.1)
+Persistent-form names and static images are referenced from PokeAPI:
+https://github.com/PokeAPI/pokeapi and https://github.com/PokeAPI/sprites
+Game/form support was derived from game personal tables published by PKHeX:
+https://github.com/kwsch/PKHeX/tree/master/PKHeX.Core/Resources/byte/personal
+Reference layouts: PKHeX.Core/PersonalInfo/Info. PKHeX is GPL-3.0 licensed;
+its license is retained in PKHeX-LICENSE.txt. Source data and build inputs
+are retained in editable source under work/forms-cache. These third-party
+data/assets are excluded from Fieldbook's original-code MIT license.
+Form-Sources.json records per-form image URLs and availability references.
+
+1.8.3 HIGH-RESOLUTION RENDERS AND OPTIONAL 3D
+Pokemon HOME renders: https://github.com/PokeAPI/sprites
+Model collection: https://github.com/Pokemon-3D-api/assets
+Per-file original URLs and checksums: Sprite-Sources.json and Model-Sources.json.
+Pokemon characters, renders, 3D models and textures are third-party assets
+and are excluded from Tristan (asentret)'s MIT code license. The upstream
+model project attributes them to Nintendo / Creatures Inc. / GAME FREAK inc.
+Three.js 0.170.0 (MIT): https://github.com/mrdoob/three.js
+Draco decoder (Apache-2.0): https://github.com/google/draco
+pywebview 6.1 (BSD-3-Clause): https://github.com/r0x0r/pywebview
+Python.NET (MIT): https://github.com/pythonnet/pythonnet
+Renderer dependency licenses accompany the source and distribution.
